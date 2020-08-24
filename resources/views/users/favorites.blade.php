@@ -9,10 +9,7 @@
         <div class="col-sm-8">
             {{-- タブ --}}
             @include('users.navtabs')
-            @if (Auth::id() == $user->id)
-                {{-- 投稿フォーム --}}
-                
-            @endif
+            
             {{-- 投稿一覧 --}}
             @include('microposts.microposts')
             

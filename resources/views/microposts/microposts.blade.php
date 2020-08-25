@@ -20,8 +20,9 @@
                             {!! Form::open(['route' => ['microposts.destroy', $micropost->id], 'method' => 'delete']) !!}
                                 {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-sm']) !!}
                             {!! Form::close() !!}
-                            @include('user_favorite.favorite_button')
+                            
                         @endif
+                         @include('user_favorite.favorite_button')
                     </div>
                 </div>
             </li>
